@@ -1,4 +1,4 @@
-const LOTTERY_CONTRACT_ADDRESS = '0x38a16308d9EAcDeE4e9BB60e26377E7230FedF5d';
+const LOTTERY_CONTRACT_ADDRESS = '0xf3102e09B4E9f7327D3E3DfDdD71eA141Ac83405';
 const CHAIN_EXPLORER = 'https://web3.okx.com/explorer/x-layer/address/'; 
 const LOTTERY_ABI = [
     // Only contains getAllInfo ABI fragment
