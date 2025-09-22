@@ -53,7 +53,8 @@ async function loadLotteryInfo() {
         const winnersWinning = result[2];
 
         const bnbAmount = Number(web3.utils.fromWei(info[6], 'ether')) * 0.7;
-        document。getElementById('jackpot-amount')。innerText = `${bnbAmount.toLocaleString('zh-CN'， { maximumFractionDigits: 4， minimumFractionDigits: 4 })} bnb ($${(bnbAmount * 1000)。toLocaleString('zh-CN'， { maximumFractionDigits: 2， minimumFractionDigits: 2 })})`;
+        document。getElementById('jackpot-amount').innerText = `${bnbAmount.toLocaleString('zh-CN', { maximumFractionDigits: 4, minimumFractionDigits: 4 })} BNB ($${(bnbAmount * 1000).toLocaleString('zh-CN', { maximumFractionDigits: 2, minimumFractionDigits: 2 })})`;
+      
         // Info section
         const lastDraw = new Date(Number(info[4]) * 1000);
         document.getElementById('last-draw-time').innerText = lastDraw.toLocaleString('zh-CN');
