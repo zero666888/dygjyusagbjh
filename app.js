@@ -1,5 +1,5 @@
 const LOTTERY_CONTRACT_ADDRESS = '0xD6e45df818c482eae4d0F527240C539240f38965';
-const CHAIN_EXPLORER = 'https://web3.okx.com/explorer/bsc/address/'; 
+const CHAIN_EXPLORER = 'https://bscscan.com/address/'; 
 const LOTTERY_ABI = [
     // Only contains getAllInfo ABI fragment
     {
