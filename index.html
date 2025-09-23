@@ -19,6 +19,49 @@
     >
   </a>
 </div>
+            <style>
+/* 1. 容器样式：定义居中的范围，这里以“页面水平居中”为例 */
+.icon-container {
+  /* 若要让容器占满父元素宽度（如页面宽度），则设置 width: 100% */
+  width: 100%; 
+  /* 若需要垂直居中，需给容器设置高度（如页面高度），示例：height: 100vh; */
+  /* height: 100vh; */ 
+  
+  /* 核心居中方案：Flex 布局（简单且兼容性好） */
+  display: flex;
+  justify-content: center; /* 水平居中（核心） */
+  align-items: center; /* 垂直居中（按需添加，需容器有高度） */
+}
+
+/* 2. 图片样式：确保任何尺寸下全图可见，不拉伸 */
+.icon-img {
+  /* 限制图片最大尺寸，避免超出容器（关键：防止溢出） */
+  max-width: 100%; /* 图片宽度不超过父容器（a标签）宽度 */
+  max-height: 100%; /* 图片高度不超过父容器（a标签）高度 */
+  
+  /* 保持图片原有比例（关键：不拉伸变形） */
+  object-fit: contain; 
+  
+  /* 可选：若需要固定最小尺寸（避免过小看不见），可添加最小尺寸限制 */
+  /* min-width: 20px; 
+  min-height: 20px; */
+  
+  /* 清除默认间距（可选） */
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* 3. 链接样式：确保a标签不影响图片居中 */
+.icon-container a {
+  /* 让a标签适应图片尺寸（避免a标签过大/过小） */
+  display: inline-block;
+  /* 清除默认样式（可选） */
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+            
             <header>
                 <h1>Giggle Game Bonus(GGB)Lucky Pool</h1>
             </header>
